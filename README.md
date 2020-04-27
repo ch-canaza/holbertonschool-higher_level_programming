@@ -1,8 +1,10 @@
 > # README
+
 ---
 ![readme](https://img.shields.io/badge/readme-OK-green.svg?colorB=00C106)
 ---
-> # Python Scripts
+> ### Python Scripts
+
 Allowed editors: vi, vim, emacs
 All your files will be interpreted/compiled on Ubuntu 14.04 LTS using python3 (version 3.4.3)
 All your files should end with a new line
@@ -25,6 +27,7 @@ All your files must be executable
 ---
 
 > ### C Scripts
+
 Allowed editors: vi, vim, emacs
 All your files will be compiled on Ubuntu 14.04 LTS
 Your programs and functions will be compiled with gcc 4.8.4 using the flags -Wall -Werror -Wextra and -pedantic
@@ -72,7 +75,7 @@ You have to use the new print numbers tips (with .format(...))
 
 
 
-### 4. Print float mandatory
+> ### 4. Print float mandatory
 Complete the source code in order to print the float stored in the variable number with a precision of 2 digits.
 
 You can find the source code here
