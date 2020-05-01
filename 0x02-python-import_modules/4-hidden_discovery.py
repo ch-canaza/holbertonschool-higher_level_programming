@@ -5,4 +5,4 @@ if __name__ == "__main__":
     modules = dir(str_modules)
     for i in range(0, len(modules)):
         if (modules[i][0] != '_'):
-                  print(modules[i])
+            print(modules[i])
