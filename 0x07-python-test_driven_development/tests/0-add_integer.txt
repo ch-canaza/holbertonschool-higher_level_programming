@@ -1,0 +1,38 @@
+The ``0-add_integer`` module
+======================
+Using ``add_integer``
+-------------------
+
+This is an example text file in reStructuredText format.  First import
+``add_integer`` from the ``0-add_integer`` module:
+
+
+    >>> add_integer = __import__("0-add_integer").add_integer
+
+Now use it:
+
+    >>> add_integer(3, 10)
+    13
+
+    >>> add_integer(-8, 9)
+    1
+
+    >>> add_integer(4.0000,7)
+    11
+
+    >>> add_integer(123456, 654321)
+    777777
+
+    >>> add_integer(('abc'), 4)
+    Traceback (most recent call last):
+    	      ...
+    TypeError: a must be an integer
+
+    >>> add_integer(.999999999999999, .999999999999999999)
+    1
+
+    >>> add_integer(.44444444, .999999999999999999)
+    1
+
+    >>> add_integer(4)
+    102

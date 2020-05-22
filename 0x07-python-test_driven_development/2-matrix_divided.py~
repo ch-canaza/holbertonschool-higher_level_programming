@@ -1,0 +1,9 @@
+#!/usr/bin/python3
+def matrix_divided(matrix, div):
+    new_matriz = []
+    result = []
+    for list in matrix:
+        for j in list:
+            result[j] / div
+    new_matriz.append(result[j])
+    return new_matriz
