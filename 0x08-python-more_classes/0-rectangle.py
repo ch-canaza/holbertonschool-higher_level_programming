@@ -1,6 +1,12 @@
 #!/usr/bin/python3
+
 """ define an empty class Rectangle"""
 
 
 class Rectangle:
-    pass
+    """ a rectangle class"""
+
+    def __init__(self):
+        """initialize class"""
+
+        pass
