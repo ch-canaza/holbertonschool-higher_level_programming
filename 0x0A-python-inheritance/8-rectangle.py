@@ -9,7 +9,6 @@ BaseGeometry = __import__('7-base_geometry').BaseGeometry
 class Rectangle(BaseGeometry):
     """ defines class rectangle """
 
-
     def __init__(self, width, height):
         """ iniyializes a rectangle method
             and validade if its arguments are
