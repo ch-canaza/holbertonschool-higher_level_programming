@@ -8,6 +8,7 @@ class MyClass:
     """
 
     def __init__(self, name):
+        """ initializes values """
         self.name = name
         self.number = 0
 
