@@ -1,4 +1,4 @@
-#!/bin/usr/python3
+#!/usr/bin/python3
 """ defines a function that write text using json representation """
 
 
@@ -10,4 +10,4 @@ def save_to_json_file(my_obj, filename):
         using json representation """
 
     with open(filename, 'w', encoding='utf-8') as f:
-        json.dump(my_obj, f)
+       f.write(json.dump(my_obj))
