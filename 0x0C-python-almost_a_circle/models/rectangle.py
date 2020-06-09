@@ -88,7 +88,8 @@ class Rectangle(Base):
         return self.__width * self.__height
 
     def display(self):
-
+        """ dfefines a function that prints the
+          rectangle with '#' """
         print("\n" * self.y, end="")
         for row in range(self.height):
             print(" " * self.x, end="")
