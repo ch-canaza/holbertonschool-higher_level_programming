@@ -32,7 +32,7 @@ class TestBasePep8(unittest.TestCase):
         file1 = 'models/base.py'
         file2 = 'tests/test_models/test_base.py'
         result = style.check_files([file1, file2])
-        self.assertEqual(result.total_errors, 1,
+        self.assertEqual(result.total_errors, 0,
                          "Found code style errors (and warning).")
 
 
