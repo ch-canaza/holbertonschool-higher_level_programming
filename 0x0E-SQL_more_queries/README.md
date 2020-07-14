@@ -82,4 +82,26 @@ Results must be sorted in ascending order by cities.id
 You can use only one SELECT statement
 The database name will be passed as an argument of the mysql command
 ---
- 
+
+> ### 10. Genre ID by show mandatory
+Import the database dump from hbtn_0d_tvshows to your MySQL server: download
+
+Write a script that lists all shows contained in hbtn_0d_tvshows that have at least one genre linked.
+
+Each record should display: tv_shows.title - tv_show_genres.genre_id
+Results must be sorted in ascending order by tv_shows.title and tv_show_genres.genre_id
+You can use only one SELECT statement
+The database name will be passed as an argument of the mysql command
+---
+> ### 11. Genre ID for all shows mandatory
+Import the database dump of hbtn_0d_tvshows to your MySQL server: download (same as 10-genre_id_by_show.sql)
+
+Write a script that lists all shows contained in the database hbtn_0d_tvshows.
+
+Each record should display: tv_shows.title - tv_show_genres.genre_id
+Results must be sorted in ascending order by tv_shows.title and tv_show_genres.genre_id
+If a show doesn’t have a genre, display NULL
+You can use only one SELECT statement
+The database name will be passed as an argument of the mysql command
+---
+
