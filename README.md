@@ -39,109 +39,82 @@ In the following examples, the main.c files are shown as examples. You can use t
 The prototypes of all your functions should be included in your header file called lists.h
 Don’t forget to push your header file
 All your header files should be include guarded
-
 ---
 
-> ### 0. Run Python file 
-
-Write a Shell script that runs a Python script.
-
-The Python file name will be saved in the environment variable $PYFILE
-
-
-> ### 1. Run inline 
-Write a Shell script that runs Python code.
-
-The Python code will be saved in the environment variable $PYCODE 
+> ### Python Test Cases
+Allowed editors: vi, vim, emacs
+All your files should end with a new line
+All your test files should be inside a folder tests
+All your test files should be text files (extension: .txt)
+All your tests should be executed by using this command: python3 -m doctest ./tests/*
+All your modules should have a documentation (python3 -c 'print(__import__("my_module").__doc__)')
+All your functions should have a documentation (python3 -c 'print(__import__("my_module").my_function.__doc__)')
+We strongly encourage you to work together on test cases, so that you don’t miss any edge case
 ---
 
-> ### 2. Hello, print 
-Write a Python script that prints exactly "Programming is like building a multilingual puzzle, followed by a new line.
+> ### 0.Integers addition mandatory
+Write a function that adds 2 integers.
 
-Use the function print 
+Prototype: def add_integer(a, b=98):
+a and b must be integers or floats, otherwise raise a TypeError exception with the message a must be an integer or b must be an integer
+a and b must be first casted to integers if they are float
+Returns an integer: the addition of a and b
+You are not allowed to import any module
+---
 
+> ### 1. Divide a matrix mandatory
+Write a function that divides all elements of a matrix.
+
+Prototype: def matrix_divided(matrix, div):
+matrix must be a list of lists of integers or floats, otherwise raise a TypeError exception with the message matrix must be a matrix (list of lists) of integers/floats
+Each row of the matrix must be of the same size, otherwise raise a TypeError exception with the message Each row of the matrix must have the same size
+div must be a number (integer or float), otherwise raise a TypeError exception with the message div must be a number
+div can’t be equal to 0, otherwise raise a ZeroDivisionError exception with the message division by zero
+All elements of the matrix should be divided by div, rounded to 2 decimal places
+Returns a new matrix
+You are not allowed to import any module
 
 ---
-> ### 3. Print integer mandatory
-Complete this source code in order to print the integer stored in the variable number, followed by Battery street, followed by a new line.
+> ### Say my name mandatory
+Write a function that prints My name is <first name> <last name>
 
-You can find the source code here
-The output of the script should be:
-the number, followed by Battery street,
-followed by a new line
-You are not allowed to cast the variable number into a string
-Your code must be 3 lines long
-You have to use the new print numbers tips (with .format(...))
+Prototype: def say_my_name(first_name, last_name=""):
+first_name and last_name must be strings otherwise, raise a TypeError exception with the message first_name must be a string or last_name must be a string
+You are not allowed to import any module
+---
 
+> ### Print square mandatory
+Write a function that prints a square with the character #.
 
+Prototype: def print_square(size):
+size is the size length of the square
+size must be an integer, otherwise raise a TypeError exception with the message size must be an integer
+if size is less than 0, raise a ValueError exception with the message size must be >= 0
+if size is a float and is less than 0, raise a TypeError exception with the message size must be an integer
+You are not allowed to import any module
+---
 
-> ### 4. Print float mandatory
-Complete the source code in order to print the float stored in the variable number with a precision of 2 digits.
+> ###Text indentation mandatory
+Write a function that prints a text with 2 new lines after each of these characters: ., ? and :
 
-You can find the source code here
-The output of the program should be:
-Float:, followed by the float with only 2 digits
-followed by a new line
-You are not allowed to cast number to string
-You have to use the new print formatting tips (with .format(...))
+Prototype: def text_indentation(text):
+text must be a string, otherwise raise a TypeError exception with the message text must be a string
+There should be no space at the beginning or at the end of each printed line
+You are not allowed to import any module
+---
 
-> ### 5. Print string mandatory
-Complete this source code in order to print 3 times a string stored in the variable str, followed by its first 9 characters.
+> ### 6. Max integer - Unittest mandatory
+Since the beginning you have been creating “Interactive tests”. For this exercise, you will add Unittests.
 
-You can find the source code here
-The output of the program should be:
-3 times the value of str
-followed by a new line
-followed by the 9 first characters of str
-followed by a new line
-You are not allowed to use any loops or conditional statement
-Your program should be maximum 5 lines long
+In this task, you will write unittests for the function def max_integer(list=[]):.
 
-> ### 6. Play with strings mandatory
-Complete this source code to print Welcome to Holberton School!
+Your test file should be inside a folder tests
+You have to use the unittest module
+Your test file should be python files (extension: .py)
+Your test file should be executed by using this command: python3 -m unittest tests.6-max_integer_test
+All tests you make must be passable by the function below
+We strongly encourage you to work together on test cases, so that you don’t miss any edge case
 
-You can find the source code here
-You are not allowed to use any loops or conditional statements.
-You have to use the variables str1 and str2 in your new line of code
-Your program should be exactly 5 lines long
-
-> ### 7. Copy - Cut - Paste mandatory
-Complete this source code
-
-You can find the source code here
-You are not allowed to use any loops or conditional statements
-Your program should be exactly 8 lines long
-word_first_3 should contain the first 3 letters of the variable word
-word_last_2 should contain the last 2 letters of the variable word
-middle_word should contain the value of the variable word without the first and last letters
-
-> ### 8. Create a new sentence mandatory
-Complete this source code to print object-oriented programming with Python, followed by a new line.
-
-You can find the source code here
-You are not allowed to use any loops or conditional statements
-Your program should be exactly 5 lines long
-You are not allowed to create new variables
-You are not allowed to use string literals
-
-> ### 9. Easter Egg mandatory
-Write a Python script that prints “The Zen of Python”, by TimPeters, followed by a new line.
-
-Your script should be maximum 98 characters long (please check with wc -m 9-easter_egg.py)
-
-> ### 10. Linked list cycle mandatory
-Technical interview preparation:
-
-You are not allowed to google anything
-Whiteboard first
-This task and all future technical interview prep tasks will include checks for the efficiency of your solution, i.e. is your solution’s runtime fast enough, does your solution require extra memory usage / mallocs, etc.
-Write a function in C that checks if a singly linked list has a cycle in it.
-
-Prototype: int check_cycle(listint_t *list);
-Return: 0 if there is no cycle, 1 if there is a cycle
-Requirements:
-
-Only these functions are allowed: write, printf, putchar, puts, malloc, free
 
 > ### ______
 

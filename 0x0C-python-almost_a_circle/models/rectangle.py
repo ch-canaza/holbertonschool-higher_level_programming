@@ -2,10 +2,12 @@
 """ defines a class Rectangle """
 
 from models.base import Base
+#import turtle
 
 
 class Rectangle(Base):
     """ class Rectangle that inherits from Base """
+    #don = turtle.Turtle()
     def __init__(self, width, height, x=0, y=0, id=None):
         """ initializes values in the clas rectangle
 
@@ -26,7 +28,7 @@ class Rectangle(Base):
         self.x = x
         self.y = y
         super().__init__(id)
-
+       
     @property
     def width(self):
         """ getting width """
@@ -90,11 +92,11 @@ class Rectangle(Base):
     def display(self):
         """ dfefines a function that prints the
           rectangle with '#' """
+        don.penup()
         print("\n" * self.y, end="")
         for row in range(self.height):
             print(" " * self.x, end="")
             for col in range(self.width):
-
                 print('#', end="")
             print()
 
@@ -124,3 +126,5 @@ class Rectangle(Base):
         for args in rect_args:
             rect_dict_rpr[args] = getattr(self, args)
         return rect_dict_rpr
+
+                     #urtle.done()

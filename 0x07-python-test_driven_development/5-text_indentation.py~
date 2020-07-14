@@ -1,0 +1,12 @@
+#!/usr/bin/python3
+def text_indentation(text):
+    with open('GFG.txt','r') as file:
+        # reading each line
+        for line in file:
+            # reading each word
+            for word in line.split():
+                # displaying the words
+                if word == . or word == ? or word == :
+                    print()
+                    print()
+                    print(line)

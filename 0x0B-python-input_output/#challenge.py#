@@ -1,0 +1,8 @@
+#!/usr/bin/python3
+
+filename = "texto.txt"
+var = "holberton"
+#for i in var
+with open(filename, 'r', encoding='utf-8') as f:    
+    for line in f:
+     

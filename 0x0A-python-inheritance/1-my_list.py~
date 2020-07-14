@@ -1,0 +1,8 @@
+#!/usr/bin/python3
+
+    class list:
+        def print_sorted(self):
+        def __init__(self):
+
+    class my_list:
+        print(sorted(list))

@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """ defines a class square """
 from models.rectangle import Rectangle
-
+#import turtle
 
 class Square(Rectangle):
     """ class square that inherits from Rectangle """
@@ -45,3 +45,5 @@ class Square(Rectangle):
         for args in sqr_args:
             sqr_dict_rpr[args] = getattr(self, args)
         return sqr_dict_rpr
+
+#turtle.done()

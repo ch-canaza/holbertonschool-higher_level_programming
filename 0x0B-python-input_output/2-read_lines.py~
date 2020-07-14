@@ -1,0 +1,12 @@
+#!/usr/bin/python3
+""" defines a finction that prints n lines of a file """
+
+
+def read_lines(filename="", nb_lines=0):
+    with open("my_file_0.txt", encoding="UTF8") as f:
+        counter = 0
+        for lines in f:
+            counter += 1
+            if counter <= nb_lines or counter >= nb_lines:
+                print lines
+            print lines

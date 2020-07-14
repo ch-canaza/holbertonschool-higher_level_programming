@@ -1,0 +1,9 @@
+#!/usr/bin/python3
+import json
+""" impor json module """
+
+def to_json_string(my_obj):
+    """ defines a function that returns json representation of an object """
+
+
+    return json.dumbs(my_obj)

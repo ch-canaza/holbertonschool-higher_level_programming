@@ -1,0 +1,17 @@
+#!/usr/bin/python3
+
+num_arg = int(input("how many args do you want to compare? --> ")
+              print("the number corresponding amount of args")
+              a = 1
+              b = 2
+              c = 3
+              print("1 word")
+              print("2 words")
+              print("3 words")
+              print("----------- ")
+              print()
+              if num_args = a
+              print("you want to look for one word anagrams")
+              print(" --------------- ")
+              print("Enter your word: ")
+              

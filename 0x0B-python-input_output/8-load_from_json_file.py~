@@ -1,0 +1,10 @@
+#!/usr/bin/python3
+""" defines a function that adds all arguments
+    to a Python list, and then save them to a file: """
+
+
+def load_from_json_file(filename):
+    """ funtion that add arguments to a python list and
+       save them in to a file """
+    with open(filename, 'w', encodimg='utf-8') as f:
+        return json.load(f)

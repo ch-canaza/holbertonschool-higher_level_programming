@@ -25,13 +25,12 @@ def matrix_divided(matrix, div):
         raise ZeroDivisionError("division by zero")
     for row in range(len(matrix)):
         for element in range(len(matrix[row])):
-            if type(matrix[row]) is not list and type(matrix[row][element] is
-                            not int or type(matrix[row][element]) is not float):
+            if not isinstance(element, (int, float)):
                 raise TypeError("matrix must be a matrix (list of lists)"
-               " of integers/floats")
+                                " of integers/floats")
             if len(matrix[0]) != len(matrix[row]):
                 raise TypeError("Each row of the matrix must have the"
-               " same size")
+                                " same size")
     new_matrix = [[round(element / div, 2) for element in row]
                   for row in matrix]
     return new_matrix

@@ -1,0 +1,51 @@
+The ``matrix_divided`` module
+======================
+
+Using ``matrix_divided``
+-------------------
+
+This is a function that divide  matrix by any number, first import
+``matrix_divided`` from the ``2-matrix_divided`` module:
+
+    >>> matrix_divided = __import__('2-matrix_divided').matrix_divided.py
+
+Now use it:
+
+    >>>	matrix_divided(matrix, 3)
+    [[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
+
+    >>>	matrix_divided(matrix, -3)
+    [[-0.33, -0.67, -1.0], [-1.33, -1.67, -2.0]]
+
+    >>>	matrix_divided(matrix, a)
+    Traceback (most recent call last):
+    	      ...
+    NameError: name 'a' is not defined
+
+    >>>	matrix_divided(None, 3)
+    Traceback (most recent call last):
+    	      ...
+    TypeError: object of type 'NoneType' has no len()
+
+    >>>matrix_divided([1, 2, 3], 3)
+    Traceback (most recent call last):
+    	      ...
+    TypeError: object of type 'int' has no len()
+
+    >>>matrix_divided(5, 3)
+    Traceback (most recent call last):
+    	      ...
+    TypeError: object of type 'int' has no len()
+
+    >>>matrix_divided(matrix, 2.3)
+    [[0.43, 0.87, 1.3], [1.74, 2.17, 2.61]]
+
+    >>>matrix_divided(matrix, 0)
+    Traceback (most recent call last):
+    	      ...
+    ZeroDivisionError: division by zero
+
+    >>>matrix_divided(matrix, "holberton")
+    Traceback (most recent call last):
+    	      ...
+    TypeError: div must be a number
