@@ -9,7 +9,7 @@
 -- If the table cities already exists, your script should not fail
 CREATE DATABASE IF NOT EXISTS hbn_0d_usa;
 USE hbn_0d_usa;
-CREATE TABLE IF NOT EXISTS ciies ( id INT NOT NULL AUTO_INCREMENT,
+CREATE TABLE IF NOT EXISTS cities ( id INT NOT NULL AUTO_INCREMENT,
 state_id INT NOT NULL,
 name VARCHAR(256) NOT NULL,
 PRIMARY KEY(id),
