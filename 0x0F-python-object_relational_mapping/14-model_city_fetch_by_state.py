@@ -1,7 +1,6 @@
 #!/usr/bin/python3
-''' script that changes the name of a State object from\
-    the database hbtn_0e_6_usa'''
-""" Change the name of the State where id = 2 to New Mexico """
+''' write a script 14-model_city_fetch_by_state.py that prints all City objects\
+     from the database hbtn_0e_14_usa: '''
 
 if __name__ == "__main__":
     from sys import argv

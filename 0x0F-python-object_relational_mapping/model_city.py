@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-""" python file that contains the class definition of a State and an \
-    instance Base = declarative_base():"""
+""" Python file similar to model_state.py named model_city.py that contains\
+     the class definition of a City."""
 
 
 from sqlalchemy import Column, Integer, String, ForeignKey
