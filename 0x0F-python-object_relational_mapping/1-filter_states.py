@@ -11,9 +11,9 @@ if __name__ == "__main__":
                          passwd=argv[2],
                          db=argv[3])
     cur = db.cursor()
-    cur.execute("SELECT * from states WHERE name LIKE 'N%' ORDER BY states.id ASC")
+    cur.execute("SELECT * from states WHERE name LIKE 'N%' ORDER BY id ASC")
     states = cur.fetchall()
     for state in states:
-        print("{}".format(state))
+        print(state)
     cur.close()
     db.close()
