@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-''' lists all states from database hbtn_0e_0_usa using SQLAlchemy'''
+''' script that adds the State object “Louisiana” to the\
+     database hbtn_0e_6_usa'''
 
 
 if __name__ == "__main__":
