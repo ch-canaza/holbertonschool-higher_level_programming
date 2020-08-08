@@ -11,10 +11,11 @@ if __name__ == "__main__":
                            .format(argv[1], argv[2], argv[3]))
     Session = sessionmaker(bind=engine)
     session = Session()
-    
-    for state in session.query(State).filter(\
-            State.name == argv[4]).order_by(State.id).all():
 
-            print("{}".format(state.id))
-
+    state = session.query(State).filter(
+                State.name == argv[4]).first()
+    if state:
+        print("{}".format(state.id))
+    else:
+        print("Not found")
     session.close()
