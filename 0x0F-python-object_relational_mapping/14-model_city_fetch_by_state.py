@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-''' write a script 14-model_city_fetch_by_state.py that prints all City objects\
-     from the database hbtn_0e_14_usa: '''
+''' write a script 14-model_city_fetch_by_state.py that\
+    prints all City objects from the database hbtn_0e_14_usa: '''
 
 if __name__ == "__main__":
     from sys import argv
