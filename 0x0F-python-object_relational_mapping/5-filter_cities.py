@@ -13,10 +13,10 @@ if __name__ == "__main__":
     cur = db.cursor()
     cur.execute("SELECT cities.name FROM cities\
                 INNER JOIN states ON states.id = cities.state_id\
-                WHERE states.name = %s\
+                WHERE states.name=%s \
                 ORDER BY cities.id", (argv[4],))
     cities = cur.fetchall()
-    value = 0
+    word_counter = 0
     for city in cities:
         if word_counter != 0:
             print(", ", end="")
