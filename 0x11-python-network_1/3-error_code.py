@@ -15,9 +15,8 @@ import urllib.error as error
 
 if __name__ == "__main__":
     url = argv[1]
-    req = rq.Request(url)
     try:
-        with rq.urlopen(req) as response:
+        with rq.urlopen(url) as response:
             print(response.read().decode('utf-8'))
     except error.URLError as e:
         print("Error code: {}".format(e.code))
