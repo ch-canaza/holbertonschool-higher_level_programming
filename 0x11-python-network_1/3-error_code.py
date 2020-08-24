@@ -19,5 +19,5 @@ if __name__ == "__main__":
     try:
         with rq.urlopen(req) as response:
             print(response.read().decode('utf-8'))
-    except error.HTTPError as e:
+    except error.URLError as e:
         print("Error code: {}".format(e.code))
