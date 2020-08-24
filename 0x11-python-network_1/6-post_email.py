@@ -8,7 +8,7 @@
     * You don’t need to error check arguments passed to
       the script (number or type)
 """
-
+import requests
 from sys import argv
 
 if __name__ == "__main__":
