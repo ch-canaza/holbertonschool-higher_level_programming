@@ -8,6 +8,7 @@
     * You don’t need to check arguments passed to the script (number or type)
     * You must use a with statement
 """
+
 import urllib.request as rq
 from sys import argv
 import urllib.error as error
