@@ -5,7 +5,7 @@ if (isNaN(argument)) {
 } else {
   for (let x = 1; x <= argument; x++) {
     let row = '';
-    for (let y = 0; y < argument; y++) row += '#';
+    for (let y = 0; y < argument; y++) row += 'X';
     console.log(row);
   }
 }
